@@ -151,9 +151,66 @@
         <div class="row justify-content-center">
           <div class="col-md-8 col-10 text-center">
             <h2>Informasi Acara</h2>
-            <p class="alamat">Alamat : Gedung Kologdam, Kodiklat TNI AD. <br> Jl. Aceh, Merdeka, Kec. Sumur Bandung, Kota Bandung</p>
-            <a href="https://maps.app.goo.gl/umKnXEWzjnzc62EY9" target="_blank" class="btn btn-light btn-sm my-4">Klik untuk membuka peta</a>
-            <p class="descrition">Diharapkan untuk tidak salah alamat dan tanggal. Manakala tiba di tujuan namun tidak ada tanda-tanda sedang dilangsungkan pernikahan, boleh jadi Anda salah jadwal, atau salah tempat.</p>
+            <p class="alamat">
+              Alamat : Gedung Kologdam, Kodiklat TNI AD. <br />
+              Jl. Aceh, Merdeka, Kec. Sumur Bandung, Kota Bandung
+            </p>
+            <a
+              href="https://maps.app.goo.gl/umKnXEWzjnzc62EY9"
+              target="_blank"
+              class="btn btn-light btn-sm my-4"
+              >Klik untuk membuka peta</a
+            >
+            <p class="description">
+              Diharapkan untuk tidak salah alamat dan tanggal. Manakala tiba di
+              tujuan namun tidak ada tanda-tanda sedang dilangsungkan
+              pernikahan, boleh jadi Anda salah jadwal, atau salah tempat.
+            </p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-md-5 col-10">
+            <div class="card text-center text-bg-light mb-5">
+              <div class="card-header">Akad Nikah</div>
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-md-6">
+                    <i class="bi bi-clock d-block"></i>
+                    <span>08.00 - 10.00</span>
+                  </div>
+                  <div class="col-md-6">
+                    <i class="bi bi-calendar3 d-block"></i>
+                    <span>Senin, 31 Maret 2025</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                Saat acara akad diharapkan untuk kondusif menjaga kekhidmatan
+                dan kekhusyuan seluruh prosesi.
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 col-10">
+            <div class="card text-center text-bg-light">
+              <div class="card-header">Resepsi</div>
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-md-6">
+                    <i class="bi bi-clock d-block"></i>
+                    <span>11.00 - Selesai</span>
+                  </div>
+                  <div class="col-md-6">
+                    <i class="bi bi-calendar3 d-block"></i>
+                    <span>Senin, 31 Maret 2025</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                Saat acara akad diharapkan untuk kondusif menjaga kekhidmatan
+                dan kekhusyuan seluruh prosesi.
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -177,6 +234,18 @@
           minutes: { singular: "menit", plural: "menit" },
           seconds: { singular: "detik", plural: "detik" },
         },
+      });
+    </script>
+    <script>
+      const stickyTop = document.querySelector(".sticky-top");
+      const offcanvas = document.querySelector(".offcanvas");
+
+      offcanvas.addEventListener("show.bs.offcanvas", function () {
+        stickyTop.style.overflow = "visible";
+      });
+
+      offcanvas.addEventListener("hidden.bs.offcanvas", function () {
+        stickyTop.style.overflow = "hidden";
       });
     </script>
   </body>
